@@ -17,7 +17,7 @@ app.use(express.json());
 mongoose.connect(process.env.mongoDBURL).then(()=>
     {
     console.log("DB is online");
-    app.listen(process.env.PORT,()=>
+    app.listen(process.env.PORT || 8080,()=>
         {
         console.log("server is online");
         })
