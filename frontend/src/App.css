@@ -1,0 +1,559 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+:root{
+  --base-color:black;
+  --text-color:white;
+  --primary-color:rgb(201, 253, 2);
+  --second-color:rgb(250, 204, 21);
+}
+
+
+.Navbar{
+  z-index:99;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.395);
+  border: 1px rgb(255, 255, 255) solid;
+  backdrop-filter:blur(10px);
+  padding: 0.8%;
+
+}
+
+.NavLink  {
+  text-decoration: none;  
+
+}
+
+.NavLink > h1{
+  color: var(--primary-color);
+  font-weight:bolder;
+  font-size: 28px;
+}
+
+.NavLink > p {
+  color: var(--text-color);
+} 
+
+.Hero {
+  background-image:url("https://weboin-task.vercel.app/static/media/Background%20Hero.d767c0c8a384b49c480bc32b5546680a.svg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  /* width: 100vw; */
+  height:50vh;
+ 
+}
+
+.HeroText{
+  text-align: center;
+  position: absolute;
+  top:28%;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color:var(--text-color);
+}
+
+.HeroTextHead{
+  text-align: center;
+  color: var(--text-color);
+  font-size: 35px;
+}
+.HeroTextSub{
+  font-size: 20px;
+  color : rgb(75 85 99);
+}
+
+.HeroText > button {
+  border: none;
+  background-color: var(--second-color);
+  padding:15px;
+  padding-left:24px;
+  padding-right:24px;
+  border-radius:40px;
+  font-size:medium;
+  font-weight: bolder;
+}
+
+
+.PlacementDiv{
+  background: linear-gradient(0deg, rgba(0,0,0,1) 34%, rgba(21,21,12,1) 100%);
+  /* background: linear-gradient(0deg, rgba(0,0,0,1) 14%, rgba(26,26,13,1) 100%); */
+  display: grid;
+  grid-row: 1fr 2fr 1fr;
+  padding: 20px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.CompLogo {
+  justify-items: center;
+  align-items: center;
+  display:grid;
+  gap: 10vw;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.CompLogo > img{
+    width: 170px;
+
+}
+.PlacementDiv > button{
+  border: none;
+  background-color:var(--primary-color);
+  padding:15px;
+  padding-left:24px;
+  padding-right:24px;
+  border-radius:40px;
+  width:200px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-size:medium;
+}
+
+.About1 {
+  
+  text-align: center;
+  color:var(--text-color);
+  background-color: black;
+}
+
+.About1 > p {
+  color: aqua;
+  padding: 20px;
+}
+.About1 > h2 {
+  position:relative;
+  left: 50%;
+  transform:translate(-50%);
+  font-size:2rem;
+  width: 80%;
+}
+.About1 > div > ul {
+  padding: 10px;
+  width:fit-content;
+  position:relative;
+  left: 50%;
+  transform:translate(-50%);
+ 
+
+}
+.About1 > div > ul > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: auto 90%;
+  justify-content:left;
+  text-align: left;
+}
+.About1 > div > ul > li > img {
+  width: 36px;
+} 
+
+.About1 > div > ul > li > div {
+  width: auto;
+  padding: 5px;
+}  
+.About1 > div > ul > li > div >h3{
+  width: auto;
+  padding-bottom: 5px;
+  font-size: 1.4rem;
+}  
+.About1 > div > ul > li > div >p{
+  width: auto;
+  padding-bottom: 5px;
+  font-size: large;
+  font-weight:bold;
+  color: rgb(160, 164, 170);
+
+}  
+
+.About1 > div  > img {
+  width: 90%;
+} 
+
+.About2{
+    padding-top:30px;
+    padding-bottom:30px;
+    color: var(--text-color);
+    background-color: black;
+}
+.About2grid{
+  text-align: center;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform:translate(-50%)
+}
+.About2grid > div >h3{
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-weight:400;
+}
+
+.About2grid  h1 {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.About2grid > div > div {
+  text-align:center;
+  margin-top:30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap:20px;
+  align-items: center;
+} 
+
+.About2grid > div > div > p{
+  position: relative;
+  left: 50%;
+  transform:translate(-50%);
+  color: black;
+  font-weight:500;
+  width: fit-content;
+    background-color:var(--primary-color);
+    border-radius:50px;
+    padding: 10px;
+}
+.About2grid > div > div > h1{
+   font-size:45px;
+}
+
+
+
+.Footer{
+  text-align: center;
+  background-color: black;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.Footer > h1 {
+  color:var(--primary-color);
+}
+
+.Footer > p {
+   color:rgb(160, 164, 170);
+}
+
+.FooterLink {
+  color: var(--text-color);
+  text-decoration: none;
+
+}
+
+
+
+.form-container{
+
+  color:var(--text-color);
+  background-color: black;
+}
+
+.form {
+  padding-top:15%;
+}
+
+.form > p {
+  text-align: center;
+  font-size:35px;
+  font-weight:bolder;
+  color:var(--primary-color);
+}
+.form > form {
+    position:relative;
+    left:50%;
+    transform:translate(-50%);
+    width:80%;
+
+}
+
+.form > form > div {
+    width:100%;
+}
+
+.form > form {
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+.form > form > div > label {
+  display: block;
+  color:var(--primary-color);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.form > form > div > input {
+  border-radius: 10px;
+    border:none;
+    border:none;
+    position:relative;
+    width:95%;
+    padding:10px;
+    padding-top:25px;
+    padding-bottom:25px;
+    font-size: 15px;
+}
+
+.form > form > div > select {
+    position:relative;
+    border-radius: 10px;
+    width:100%;
+    padding:15px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size: 15px;
+}
+
+.form > form > input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  left:80%;
+  transform: translate(-20%);
+  background-color: black;
+  border:solid 2px white;  
+  font-size: 15px;
+  border-radius: 40px;
+  color:white;
+  padding:15px;
+  width: fit-content;
+  padding-left:20px;
+  padding-right:20px;
+}
+.formPage {
+  background-color: black;
+}
+.formPage > ul{
+  position:relative;
+  left:50%;
+  transform:translate(-50%);
+  gap:10px;
+  width:90%;
+  display:grid;
+  grid-template-columns: 1fr;
+  
+}
+.formPage > ul > li{
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  padding:20px;
+  display:flex;
+  padding-top: 30px;  
+  padding-bottom: 30px;
+  flex-direction:column;
+  gap:20px;
+}
+
+.formPage > ul > li > div {
+  display:grid;
+  grid-template-columns: auto 90%;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+
+}
+
+.formPage > ul > li > div > div {
+  color:white;
+  font-weight:bolder;
+  font-size:large;
+  background-color:var(--primary-color);
+  padding:15px;
+  padding-left:20px;
+  padding-right:20px;
+  border-radius:100%;
+}
+
+.formPage > ul > li > button{
+  background-color:rgb(233, 59, 59);
+  border:none;
+  padding:10px;
+  color:white;
+  font-weight:bold;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+.Navbar{
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.395);
+  top:3%;
+  left: 50%;
+  transform:translate(-50%);
+  border: 1px rgb(255, 255, 255) solid;
+  backdrop-filter:blur(10px);
+  padding: 0.8%;
+  border-radius:30PX;
+}
+.NavLink  {
+  text-decoration: none;
+}
+
+.NavLink > h1{
+  color: var(--primary-color);
+  font-weight:bolder;
+  font-size: 28px;
+}
+
+.NavLink > p {
+  color: var(--text-color);
+} 
+
+.Hero{
+  height:70vh;
+}
+.HeroText{
+  width: 60%;
+}
+.HeroTextHead{
+  font-size: 62px;
+}
+
+.CompLogo {
+  justify-items: center;
+  align-items: center;
+  display:grid;
+  gap: 10vw;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.About1 > h2 {
+  font-size:2.5rem;
+}
+.form {
+  padding-top:10%;
+}
+
+.form > form {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:30px;
+}
+
+.form > form > input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  left:190%;
+  transform: translate(-20%);
+  background-color: black;
+  border:solid 2px white;  
+  font-size: 15px;
+  border-radius: 40px;
+  color:white;
+  padding:15px;
+  width: fit-content;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.formPage > ul {
+  border-radius: 20px;
+  padding:20px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 30px;  
+  padding-bottom: 30px;
+  flex-direction:column;
+  gap:20px;
+}
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  .HeroText{
+    width: 50%;
+  }
+
+  .CompLogo {
+    justify-items: center;
+    align-items: center;
+    display:grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  }
+ .About1 {
+  padding:60px;
+ }
+
+  .About1 > h2 {
+    font-size:2.8rem;
+    margin-bottom: 50px;
+    width: 60%;
+  }
+
+  .About1 > div{
+    position: relative;
+    left: 50%;
+    transform:translate(-50%);
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+  }.About1 > div > img{
+    position: relative;
+    left:50%;
+    transform:translate(-50%);
+  }
+
+  .About2grid{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    gap:20px;
+    text-align:left;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .About2grid > h1 {
+    font-size: 40px;
+  }
+
+  .About2grid > div > div > h1{
+    font-size:60px;
+ }
+
+ .form {
+  padding-top:10%;
+}
+
+.formPage > ul {
+  border-radius: 20px;
+  padding:20px;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 30px;  
+  padding-bottom: 30px;
+  flex-direction:column;
+  gap:20px;
+}
+}
