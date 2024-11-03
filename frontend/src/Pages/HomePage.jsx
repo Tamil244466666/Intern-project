@@ -7,7 +7,7 @@ const HomePage  = ()=>{
     const [statusCount,setstatusCount] = useState({Total : 0 , Placed : 0,Unplaced : 0});
 
  useEffect(()=>{
-    axios.get('https://intern-project-server.vercel.app/form/')
+    axios.get('https://intern-project-a6a0.onrender.com/form/')
     .then((res)=>{
         setalldata([...res.data.all_formData]);
         console.log(res)
