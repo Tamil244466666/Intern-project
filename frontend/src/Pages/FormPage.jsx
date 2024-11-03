@@ -30,7 +30,7 @@ import axios from 'axios'
 
 const submitHandler = (event)=>{
     // event.preventDefault();
-    axios.post('https://intern-project-server.vercel.app/form/',{FormData:formdata})
+    axios.post('https://intern-project-a6a0.onrender.com/form/',{FormData:formdata})
     .then((res)=>{
         // alert(res.data.status);
     }).catch((err)=>{
@@ -40,7 +40,7 @@ const submitHandler = (event)=>{
 
 
 const deleteHandler = (value)=>{
-    axios.delete(`https://intern-project-server.vercel.app/form/${value}`).then((res)=>{
+    axios.delete(`https://intern-project-a6a0.onrender.com/form/${value}`).then((res)=>{
         // alert((res.data.status));
     }).catch((err)=>{
         console.log(err);
