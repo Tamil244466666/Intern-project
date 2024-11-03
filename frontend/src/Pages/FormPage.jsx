@@ -16,7 +16,7 @@ import axios from 'axios'
     useEffect(()=>{
         const source = axios.CancelToken.source();
 
-        axios.get('http://localhost:8080/form/',{cancelToken:source.token}).then((res)=>{
+        axios.get('https://intern-project-server.vercel.app/form/',{cancelToken:source.token}).then((res)=>{
             setallData([...res.data.all_formData]);
         }).catch((err)=>{
             console.log(err)
@@ -30,7 +30,7 @@ import axios from 'axios'
 
 const submitHandler = (event)=>{
     // event.preventDefault();
-    axios.post('http://localhost:8080/form/',{FormData:formdata})
+    axios.post('https://intern-project-server.vercel.app/form/',{FormData:formdata})
     .then((res)=>{
         // alert(res.data.status);
     }).catch((err)=>{
@@ -40,7 +40,7 @@ const submitHandler = (event)=>{
 
 
 const deleteHandler = (value)=>{
-    axios.delete(`http://localhost:8080/form/${value}`).then((res)=>{
+    axios.delete(`https://intern-project-server.vercel.app/form/${value}`).then((res)=>{
         // alert((res.data.status));
     }).catch((err)=>{
         console.log(err);
