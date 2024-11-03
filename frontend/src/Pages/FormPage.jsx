@@ -16,7 +16,7 @@ import axios from 'axios'
     useEffect(()=>{
         const source = axios.CancelToken.source();
 
-        axios.get('https://intern-project-server.vercel.app/form/',{cancelToken:source.token}).then((res)=>{
+        axios.get('https://intern-project-a6a0.onrender.com/form/',{cancelToken:source.token}).then((res)=>{
             setallData([...res.data.all_formData]);
         }).catch((err)=>{
             console.log(err)
